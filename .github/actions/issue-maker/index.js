@@ -9,6 +9,7 @@ async function run() {
     console.log("token: " + token);
 
     const octokit = github.getOctokit(token);
+    console.log("github: " + github);
     console.log("octokit: " + octokit);
 
     const newIssue = await octokit.issues.create({
